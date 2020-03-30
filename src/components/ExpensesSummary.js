@@ -5,22 +5,37 @@ import { connect } from 'react-redux'
 import numeral from 'numeral'
 import 'numeral/locales/en-gb'
 
-numeral.locale('en-gb')
 
-export const ExpensesSummary = (props) => {
-  const total = numeral(selectExpensesTotal(props.expenses) / 100).format('$0,0.00')
-  
+export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
+  const expenseWord = expenseCount === 1 ? 'expense' : 'expenses'
+  numeral.locale('en-gb')
+  const formattedExpensesTotal = numeral(expensesTotal / 100).format('$0,0.00')
+
   return (
     <div>
-      <p>{`Viewing ${props.expenses.length} expense${props.expenses.length === 1 ? '': 's'} totalling ${total}`}</p>
+      <h1>Viewing {expenseCount} {expenseWord} totalling {formattedExpensesTotal}</h1>
     </div>
   )
 }
 
+
+// export const ExpensesSummary = (props) => {
+//   const total = numeral(selectExpensesTotal(props.expenses) / 100).format('$0,0.00')
+  
+//   return (
+//     <div>
+//       <p>{`Viewing ${props.expenses.length} expense${props.expenses.length === 1 ? '': 's'} totalling ${total}`}</p>
+//     </div>
+//   )
+// }
+
 const mapStateToProps = (state) => {
-  return {
-    expenses: selectExpenses(state.expenses, state.filters)
-  }
+    const visibleExpenses = selectExpenses(state.expenses, state.filters)
+
+    return {
+      expenseCount: visibleExpenses.length,
+      expensesTotal: selectExpensesTotal(visibleExpenses)
+    }
 }
 
 export default connect(mapStateToProps)(ExpensesSummary)

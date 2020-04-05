@@ -16,6 +16,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles.css'
     }),
+    // Pass Node environment variables down to the JavaScript client
     new webpack.DefinePlugin({
       'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
       'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),

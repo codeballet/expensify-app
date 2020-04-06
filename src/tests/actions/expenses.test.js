@@ -117,7 +117,7 @@ test('should add expense with defaults to database and store', (done) => {
   })
 })
 
-test('should setup setExpense action object with data', () => {
+test('should setup setExpenses action object with data', () => {
   const action = setExpenses(expenses)
   expect(action).toEqual({
     type: 'SET_EXPENSES',

@@ -1,7 +1,8 @@
 # Expensify app
 The Expensify helps you to keep track of your expenses.
 
-## Firebase Database Rules
+## Firebase Database Settings
+### Rules
 To secure the Firebase Database, use the following rules:
 ```
 {
@@ -41,3 +42,6 @@ To secure the Firebase Database, use the following rules:
 }
 ```
 Visit https://firebase.google.com/docs/database/security to learn more about security rules.
+
+### Authentication
+Under Firebase Authentication, add the domain of your frontend to the 'Authorised domains' section in order to be able to login.

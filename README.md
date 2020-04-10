@@ -38,7 +38,7 @@ To run the test suite in watch mode, while avoiding most timeout errors from asy
 
 ## Firebase Database Settings
 ### Security and Rules
-To secure the Firebase Database, you may use the following rules:
+To secure the Firebase Database, you may use the following rules in the Firebase Database Rules console section:
 ```
 {
   "rules": {
@@ -79,6 +79,6 @@ To secure the Firebase Database, you may use the following rules:
 Visit https://firebase.google.com/docs/database/security to learn more about security rules.
 
 ### Firebase Authentication setting
-In order for the app to be allowed to communicate with and login to Firebase, you need to make sure that you have specified the app's domain name in the Firebase Authentication 'Authorised domains' settings section.
+In order for the app to be allowed to communicate with and login to Firebase, you need to make sure that you have specified the app's domain name in the Firebase Authentication 'Authorised domains' console section.
 
 ## Running the app in production mode

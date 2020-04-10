@@ -100,5 +100,8 @@ To create a production build with the included Node Express server, run the comm
 `npm run build:prod`
 That command will generate `bundle.js` and `styles.css` files in the `public/dist` folder. The entire `public` folder may then be used for deployment to any service of your choice.
 
+## Credits
+A big thank you to Andrew Mead for teaching me how to use React!
+
 ## Licence
 MIT

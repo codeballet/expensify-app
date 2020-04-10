@@ -82,10 +82,16 @@ Visit https://firebase.google.com/docs/database/security to learn more about sec
 ### Firebase Authentication settings
 In order for the app to be allowed to communicate with and login to Firebase, you need to make sure that you have specified the app's domain name in the Firebase Authentication 'Authorised domains' console section.
 
-## Running the app in production mode
-To create a production build, run the command:
+## Deployment
+The project is designed to be deployed to Heroku. In order to deploy to Heroku, you need to:
+1. Create a new project on Heroku.
+2. Define the environment variables for Firebase on Heroku (same as for the `env` files specified above).
+3. Use git to push the project to Heroku.
+
+### Deploying elsewhere
+To create a production build with the included Node Express server, run the command:
 `npm run build:prod`
-That command will generate a build under the `public/dist` folder.
+That command will generate `bundle.js` and `styles.css` files in the `public/dist` folder. The entire `public` folder may then be used for deployment to any service of your choice.
 
 ## Licence
 MIT

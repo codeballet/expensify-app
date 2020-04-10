@@ -1,5 +1,6 @@
 # Expensify app
-The Expensify helps you to keep track of your expenses.
+The Expensify app helps you to keep track of your expenses.
+The app is built with React for the frontend and uses Firebase as the backend.
 
 ## Installation and running the app in development
 In order to run the app locally in development mode, you need three things:
@@ -78,7 +79,13 @@ To secure the Firebase Database, you may use the following rules in the Firebase
 ```
 Visit https://firebase.google.com/docs/database/security to learn more about security rules.
 
-### Firebase Authentication setting
+### Firebase Authentication settings
 In order for the app to be allowed to communicate with and login to Firebase, you need to make sure that you have specified the app's domain name in the Firebase Authentication 'Authorised domains' console section.
 
 ## Running the app in production mode
+To create a production build, run the command:
+`npm run build:prod`
+That command will generate a build under the `public/dist` folder.
+
+## Licence
+MIT

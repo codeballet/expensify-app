@@ -13,7 +13,7 @@ In order to run the app locally in development mode, you need to prepare three t
 To install the Node dependencies, run the command:
 `npm i`
 
-### Creating the Firebase database and .env files
+### Creating Firebase databases and .env files
 Information for how to set up the Firebase database can be found here:
 https://firebase.google.com/docs/web/setup?authuser=0
 
@@ -92,7 +92,7 @@ In order for the app to be allowed to communicate with and login to Firebase, yo
 ## Deployment
 The project is designed to be deployed to Heroku. In order to deploy to Heroku, you need to:
 1. Create a new project on Heroku.
-2. Define the environment variables for Firebase on Heroku (same as for the `env` files specified above).
+2. Define the environment variables for Firebase on Heroku (same as for the `.env` files specified above).
 3. Use git to push the project to Heroku.
 
 ### Deploying elsewhere

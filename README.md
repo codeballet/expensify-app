@@ -29,6 +29,10 @@ FIREBASE_MEASUREMENT_ID=yourfirebasemeasurementid
 ```
 
 ### Running the dev-server
+To start the dev-server, run the command:
+`npm run dev-server`
+
+### Running the test suite
 To run the test suite in watch mode, while avoiding most timeout errors from asynchronous database calls, run the command:
 `npm run test -- --watch --runInBand`
 

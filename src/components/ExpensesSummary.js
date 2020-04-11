@@ -26,17 +26,6 @@ export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
   )
 }
 
-
-// export const ExpensesSummary = (props) => {
-//   const total = numeral(selectExpensesTotal(props.expenses) / 100).format('$0,0.00')
-  
-//   return (
-//     <div>
-//       <p>{`Viewing ${props.expenses.length} expense${props.expenses.length === 1 ? '': 's'} totalling ${total}`}</p>
-//     </div>
-//   )
-// }
-
 const mapStateToProps = (state) => {
     const visibleExpenses = selectExpenses(state.expenses, state.filters)
 

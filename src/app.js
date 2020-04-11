@@ -13,8 +13,6 @@ import { firebase } from './firebase/firebase'
 import { startSetExpenses } from './actions/expenses'
 import { login, logout } from './actions/auth'
 import LoadingPage from './components/LoadingPage'
-// import getVisibleExpenses from './selectors/expenses'
-
 
 const store = configureStore()
 const jsx = (

@@ -93,7 +93,7 @@ In order for the app to be allowed to communicate with and login to Firebase, yo
 The project is designed to be deployed to Heroku. In order to deploy to Heroku, you need to:
 1. Create a new project on Heroku.
 2. Define the environment variables for Firebase on Heroku (same as for the `.env` files specified above).
-3. Use git to push the project to Heroku.
+3. Use git to push the project to Heroku with `git push heroku master`.
 
 ### Deploying elsewhere
 To create a production build with the included Node Express server, run the command:
